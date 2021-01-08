@@ -1,0 +1,134 @@
+@media(max-width: 767px) {
+    .mobile-navbar {
+        display: block !important;
+    }
+}
+
+@media(max-width: 360px) {
+    .mobile-actions a {
+        padding: 14px 10px 8px !important;
+    }
+    .mobile-navbar-brand  {
+        padding: 11px 8px 25px !important;
+        font-size: 13px !important;
+    }
+    .mobile-actions > li {
+        margin: 0 8px !important;
+    }
+    .mobile-actions > li:last-child {
+        margin: 0 !important;
+    }
+    /* .mobile-actions a:last-child {
+        padding-right: 0 !important;
+    } */
+}
+
+.mobile-navbar{
+    background-color: #fff;
+    position: relative;
+    border-bottom: 1px solid #dddddd;
+}
+
+.mobile-navbar .flex {
+    justify-content: space-between;
+}
+
+.mobile-navbar-brand {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Scada", sans-serif;
+    padding: 15px 10px 35px;
+    white-space: nowrap;
+}
+
+.mobile-actions {
+    display: flex;
+}
+
+.mobile-actions > li {
+    margin: 0 15px;
+}
+
+.mobile-actions > li:last-child {
+    margin-right: 0;
+}
+
+.mobile-actions a {
+    color: var(--secondary-color);
+    font-size: 21px;
+    padding: 24px 10px 18px;
+    display: inline-block;
+}
+
+.mobile-actions a:last-child {
+    padding-right: 0;
+}
+
+
+.sidebar-wrapper.active {
+    right: 0;
+}
+
+.sidebar-wrapper {
+    position: fixed;
+    top: 0;
+    right: -70%;
+    width: 70%;
+    background-color: #fff;
+    height: 770px;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.cancel {
+    position: absolute;
+    right: 25px;
+    top: 25px;  
+}
+
+.cancel svg {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #dddddd;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sidebar.brand {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: none;
+}
+
+.sidebar li {
+    margin: 12px 0;
+}
+
+.sidebar li a {
+    color: #777777;
+    font-weight: 500;
+    padding: 15px 0;
+}
+
+.sidebar.brand li a {
+    color: #777777;
+    font-weight: normal;
+    padding: 15px 0;
+}
+
+.sidebar li a.active {
+    color: var(--primary-color);
+}

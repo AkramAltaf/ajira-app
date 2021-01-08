@@ -1,0 +1,22 @@
+.banner {
+    background-image: url("../assets/banner3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 680px;
+    background-size: cover;
+    position: relative;
+    font-family: "Jost", sans-serif;
+    margin-bottom: 9px;
+}
+
+.banner .banner-content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, 0);
+   text-align: center;
+}
+
+.btn.btn-banner {
+    font-weight: 500;
+}

@@ -1,0 +1,84 @@
+.collection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.collection-wrapper {
+    padding: 0 5px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.collection-details {
+    font-family: "Jost", sans-serif;
+    text-align: center;
+}
+
+.collection-details a {
+    font-size: 14px;
+    margin-top: 15px;
+    display: block;
+    color: #333333;
+    transition: 0.3s;
+}
+
+.collection-details a:hover {
+    color: var(--primary-color);
+}
+
+.collection-details p.price {
+    color: var(--primary-color);
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+}
+
+.title h3 {
+    color: #333333;
+    font-family: "BankGothik", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #dddddd;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    margin-left: 150px;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #dddddd;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50%;
+    margin-right: 150px;
+}
+
+@media(max-width: 768px) {
+    .title::after {
+        width: 0px;
+    }
+    
+    .title::before {
+        width: 0px;
+    }
+}

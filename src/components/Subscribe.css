@@ -1,0 +1,105 @@
+.subscribe {
+    background-image: url("../assets/subscribe-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 360px;
+    background-size: cover;
+    position: relative;
+    font-family: "Jost", sans-serif;
+}
+
+.subscribe::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.subscribe-content {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   z-index: 20;
+}
+
+.subscribe-content h2 {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.subscribe-content p {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 11px;
+    margin-bottom: 27px;
+}
+
+.subscribe-content input[type="email"] {
+    width: 360px;
+    height: 40px;
+    border: none;
+    padding: 0 15px;
+    outline-width: 0;
+    margin-right: 10px;
+    font-family: "Jost", sans-serif;
+    border-radius: 2px;
+}
+
+.btn.subscribe-btn {
+    padding: 10px 30px;
+}
+
+.location {
+    position: absolute;
+    right: 188px;
+    bottom: 0;
+    text-transform: uppercase;
+    color: #dddddd;
+    height: 40px;
+    border: none;
+    width: 160px;
+    z-index: 20;
+    cursor: pointer;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    background: #222222;
+    box-shadow: 6px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 6px 6px 0px 0px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location svg {
+    font-size: 22px;
+    margin-right: 7px;
+}
+
+@media(max-width: 768px) {
+    .subscribe-content input[type="email"] {
+        width: 300px;
+        padding: 0 15px;
+        margin-right: 0px;
+        border-radius: 0px;
+    }
+    
+    .btn.subscribe-btn {
+        padding: 10px 30px;
+        display: block;
+        width: 300px;
+        margin: 14px auto 0;
+    }
+
+    .location {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
