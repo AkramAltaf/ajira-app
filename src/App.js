@@ -1,27 +1,26 @@
 import "./App.css";
-import Banner from "./components/Banner";
-import Collections from "./components/Collections";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./components/Footer";
-import Gallery from "./components/Gallery";
 import MobileHeader from "./components/MobileHeader";
 import MobileNav from "./components/MobileNav";
 import Navbar from "./components/Navbar";
-import Subscribe from "./components/Subscribe";
-import Testimonial from "./components/Testimonial";
+import Home from "./Pages/Home";
+import User from "./components/User/User";
+import Profiles from "./components/Profile/Profiles";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Navbar />
       <MobileHeader />
       <MobileNav />
-      <Banner />
-      <Gallery />
-      <Collections />
-      <Testimonial />
-      <Subscribe />
+      <Switch>
+        <Route path="/" component={Home} exact />
+        <Route path="/user" component={User} />
+        <Route path="/profile" component={Profiles} />
+      </Switch>
       <Footer />
-    </div>
+    </Router>
   );
 }
 

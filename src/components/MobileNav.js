@@ -39,7 +39,7 @@ function MobileNav() {
       <Slider {...settings}>
         <div className="mobile-nav-wrapper">
           <div className="mobile-nav-detail">
-            <div className="mobile-nav-image">
+            <div className="mobile-nav-image active">
               <a href="#">
                 <img src={product} alt="Product" />
               </a>
@@ -54,7 +54,7 @@ function MobileNav() {
                 <img src={product} alt="Product" />
               </a>
             </div>
-            <a href="#">For Me</a>
+            <a href="#">Jeans</a>
           </div>
         </div>
         <div className="mobile-nav-wrapper">
@@ -64,7 +64,7 @@ function MobileNav() {
                 <img src={product} alt="Product" />
               </a>
             </div>
-            <a href="#">For Me</a>
+            <a href="#">T-Shirts</a>
           </div>
         </div>
         <div className="mobile-nav-wrapper">
@@ -74,7 +74,7 @@ function MobileNav() {
                 <img src={product} alt="Product" />
               </a>
             </div>
-            <a href="#">For Me</a>
+            <a href="#">Shirts</a>
           </div>
         </div>
         <div className="mobile-nav-wrapper">
@@ -84,7 +84,7 @@ function MobileNav() {
                 <img src={product} alt="Product" />
               </a>
             </div>
-            <a href="#">For Me</a>
+            <a href="#">Trousers</a>
           </div>
         </div>
         <div className="mobile-nav-wrapper">
@@ -94,7 +94,7 @@ function MobileNav() {
                 <img src={product} alt="Product" />
               </a>
             </div>
-            <a href="#">For Me</a>
+            <a href="#">Joggers</a>
           </div>
         </div>
         <div className="mobile-nav-wrapper">
@@ -104,57 +104,7 @@ function MobileNav() {
                 <img src={product} alt="Product" />
               </a>
             </div>
-            <a href="#">For Me</a>
-          </div>
-        </div>
-        <div className="mobile-nav-wrapper">
-          <div className="mobile-nav-detail">
-            <div className="mobile-nav-image">
-              <a href="#">
-                <img src={product} alt="Product" />
-              </a>
-            </div>
-            <a href="#">For Me</a>
-          </div>
-        </div>
-        <div className="mobile-nav-wrapper">
-          <div className="mobile-nav-detail">
-            <div className="mobile-nav-image">
-              <a href="#">
-                <img src={product} alt="Product" />
-              </a>
-            </div>
-            <a href="#">For Me</a>
-          </div>
-        </div>
-        <div className="mobile-nav-wrapper">
-          <div className="mobile-nav-detail">
-            <div className="mobile-nav-image">
-              <a href="#">
-                <img src={product} alt="Product" />
-              </a>
-            </div>
-            <a href="#">For Me</a>
-          </div>
-        </div>
-        <div className="mobile-nav-wrapper">
-          <div className="mobile-nav-detail">
-            <div className="mobile-nav-image">
-              <a href="#">
-                <img src={product} alt="Product" />
-              </a>
-            </div>
-            <a href="#">For Me</a>
-          </div>
-        </div>
-        <div className="mobile-nav-wrapper">
-          <div className="mobile-nav-detail">
-            <div className="mobile-nav-image">
-              <a href="#">
-                <img src={product} alt="Product" />
-              </a>
-            </div>
-            <a href="#">For Me</a>
+            <a href="#">Shorts</a>
           </div>
         </div>
       </Slider>

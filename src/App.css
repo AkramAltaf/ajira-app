@@ -86,6 +86,12 @@ img {
   padding: 0 40px;
 }
 
+@media (max-width: 360px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
 .flex {
   display: flex;
   justify-content: center;

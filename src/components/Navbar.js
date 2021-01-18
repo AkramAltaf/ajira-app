@@ -1,14 +1,15 @@
 import React from "react";
 import { MdSearch, MdAddShoppingCart, MdPermIdentity } from "react-icons/md";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <div className="navbar" style={{ display: "none" }}>
       <div className="container flex">
-        <a href="#" className="navbar-brand">
+        <Link to="/" className="navbar-brand">
           Made up
-        </a>
+        </Link>
         <ul className="navbar-nav">
           <li>
             <a href="#">For me</a>
@@ -39,14 +40,14 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <Link to="/profile">
               <MdAddShoppingCart />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/user">
               <MdPermIdentity />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

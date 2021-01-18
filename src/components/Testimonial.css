@@ -27,6 +27,12 @@
     border: none;
 }
 
+@media(max-width: 360px) {
+    .testimonial-wrap {
+        padding-top: 10x !important;
+    }
+}
+
 .testimonial-wrapper {
     background-color: #fff;
     /* width: 329px; */

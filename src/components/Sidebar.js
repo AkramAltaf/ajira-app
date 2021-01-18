@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import { Link } from "react-router-dom";
 import "./Sidebar.css";
 
 function Sidebar() {
@@ -14,9 +15,9 @@ function Sidebar() {
       </div>
       <ul className="sidebar">
         <li>
-          <a href="#" className="active">
+          <Link to="/user" className="active">
             My profile
-          </a>
+          </Link>
         </li>
         <li>
           <a href="#">My wishlist</a>
@@ -31,17 +32,17 @@ function Sidebar() {
       <ul className="sidebar brand">
         <li>
           <a href="#" className="active">
-            My profile
+            The brand
           </a>
         </li>
         <li>
-          <a href="#">My wishlist</a>
+          <a href="#">The made up story</a>
         </li>
         <li>
-          <a href="#">My orders</a>
+          <a href="#">Franchise and supplieds</a>
         </li>
         <li>
-          <a href="#">My addresses</a>
+          <a href="#">Store locator</a>
         </li>
       </ul>
     </div>

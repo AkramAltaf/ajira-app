@@ -3,6 +3,7 @@ import { MdSearch, MdAddShoppingCart } from "react-icons/md";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
 import "./MobileHeader.css";
+import { Link } from "react-router-dom";
 
 function MobileHeader() {
   const [sidebar, setSidebar] = useState(false);
@@ -11,15 +12,18 @@ function MobileHeader() {
 
   return (
     <>
-      <div className={sidebar ? "sidebar-wrapper active" : "sidebar-wrapper"}>
+      <div
+        onClick={toggleSidebar}
+        className={sidebar ? "sidebar-wrapper active" : "sidebar-wrapper"}
+      >
         <div className="cancel">
           <IoMdClose onClick={toggleSidebar} />
         </div>
         <ul className="sidebar">
           <li>
-            <a href="#" className="active">
+            <Link to="/user" className="active">
               My profile
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#">My wishlist</a>
@@ -34,25 +38,25 @@ function MobileHeader() {
         <ul className="sidebar brand">
           <li>
             <a href="#" className="active">
-              My profile
+              The brand
             </a>
           </li>
           <li>
-            <a href="#">My wishlist</a>
+            <a href="#">The made up story</a>
           </li>
           <li>
-            <a href="#">My orders</a>
+            <a href="#">Franchise and supplieds</a>
           </li>
           <li>
-            <a href="#">My addresses</a>
+            <a href="#">Store locator</a>
           </li>
         </ul>
       </div>
       <div className="mobile-navbar" style={{ display: "none" }}>
         <div className="container flex">
-          <a href="#" className="mobile-navbar-brand">
+          <Link to="/" className="mobile-navbar-brand">
             Made up
-          </a>
+          </Link>
           <ul className="mobile-actions">
             <li>
               <a href="#">
