@@ -5,8 +5,30 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import product from "../assets/testimonial-img.png";
 import "./MobileNav.css";
+import { Link } from "react-router-dom";
 
 function MobileNav() {
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <IoIosArrowForward
+        className={className}
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <IoIosArrowBack
+        className={className}
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      />
+    );
+  }
   let settings = {
     // dot: true,
     infinite: true,
@@ -15,8 +37,8 @@ function MobileNav() {
     slidesToShow: 5,
     slidesToScoll: 1,
     cssEase: "linear",
-    nextArrow: <IoIosArrowForward />,
-    prevArrow: <IoIosArrowBack />,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1300,
@@ -24,8 +46,6 @@ function MobileNav() {
           slidesToShow: 0,
         },
       },
-    ],
-    responsive: [
       {
         breakpoint: 768,
         settings: {
@@ -40,71 +60,71 @@ function MobileNav() {
         <div className="mobile-nav-wrapper">
           <div className="mobile-nav-detail">
             <div className="mobile-nav-image active">
-              <a href="#">
+              <Link to="/">
                 <img src={product} alt="Product" />
-              </a>
+              </Link>
             </div>
-            <a href="#">For Me</a>
+            <Link to="/">For Me</Link>
           </div>
         </div>
         <div className="mobile-nav-wrapper">
           <div className="mobile-nav-detail">
             <div className="mobile-nav-image">
-              <a href="#">
+              <Link to="/">
                 <img src={product} alt="Product" />
-              </a>
+              </Link>
             </div>
-            <a href="#">Jeans</a>
+            <Link to="/">Jeans</Link>
           </div>
         </div>
         <div className="mobile-nav-wrapper">
           <div className="mobile-nav-detail">
             <div className="mobile-nav-image">
-              <a href="#">
+              <Link to="/">
                 <img src={product} alt="Product" />
-              </a>
+              </Link>
             </div>
-            <a href="#">T-Shirts</a>
+            <Link to="/">T-Shirts</Link>
           </div>
         </div>
         <div className="mobile-nav-wrapper">
           <div className="mobile-nav-detail">
             <div className="mobile-nav-image">
-              <a href="#">
+              <Link to="/">
                 <img src={product} alt="Product" />
-              </a>
+              </Link>
             </div>
-            <a href="#">Shirts</a>
+            <Link to="/">Shirts</Link>
           </div>
         </div>
         <div className="mobile-nav-wrapper">
           <div className="mobile-nav-detail">
             <div className="mobile-nav-image">
-              <a href="#">
+              <Link to="/">
                 <img src={product} alt="Product" />
-              </a>
+              </Link>
             </div>
-            <a href="#">Trousers</a>
+            <Link to="/">Trousers</Link>
           </div>
         </div>
         <div className="mobile-nav-wrapper">
           <div className="mobile-nav-detail">
             <div className="mobile-nav-image">
-              <a href="#">
+              <Link to="/">
                 <img src={product} alt="Product" />
-              </a>
+              </Link>
             </div>
-            <a href="#">Joggers</a>
+            <Link to="/">Joggers</Link>
           </div>
         </div>
         <div className="mobile-nav-wrapper">
           <div className="mobile-nav-detail">
             <div className="mobile-nav-image">
-              <a href="#">
+              <Link to="/">
                 <img src={product} alt="Product" />
-              </a>
+              </Link>
             </div>
-            <a href="#">Shorts</a>
+            <Link to="/">Shorts</Link>
           </div>
         </div>
       </Slider>

@@ -15,7 +15,7 @@ function Sidebar() {
       </div>
       <ul className="sidebar">
         <li>
-          <Link to="/user" className="active">
+          <Link to="/profile" className="active">
             My profile
           </Link>
         </li>

@@ -4,6 +4,7 @@ import "./Profile.css";
 const Profile = () => {
   return (
     <form className="form-wrapper">
+      <p>My Profile</p>
       <input type="text" placeholder="First name" />
       <input type="text" placeholder="Last name" />
       <input type="text" placeholder="Email" />

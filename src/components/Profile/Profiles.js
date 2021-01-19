@@ -23,14 +23,14 @@ const Profiles = () => {
     {
       id: "xyz",
       title: "My Orders",
-      subtitle: "Notifications, password",
+      subtitle: "Already have 12 orders",
       type: "order",
       active: false,
       comp: <Order />,
     },
     {
       id: "pqr",
-      title: "Address",
+      title: "Shipping address",
       subtitle: "3 address",
       type: "address",
       active: false,
@@ -65,30 +65,49 @@ const Profiles = () => {
             {navItems.map((navItem) => (
               <div
                 key={navItem.id}
-                className={`title-label ${navItem.active ? "active" : ""}`}
+                className={`title-label desktop-layout ${
+                  navItem.active ? "active" : ""
+                }`}
                 onClick={() => toggleAccordion(navItem.id)}
               >
                 <div>
                   <p className="title-text">{navItem.title}</p>
                   <p className="subtitle-text">{navItem.subtitle}</p>
                 </div>
-                <span>
-                  {navItem.active ? (
-                    <MdKeyboardArrowUp />
-                  ) : (
-                    <MdKeyboardArrowDown />
-                  )}
-                </span>
+                <MdKeyboardArrowRight />
+                <span className="desktop-separator" />
               </div>
             ))}
           </div>
           <div className="user-content">
             {navItems.map((navItem, index) => (
-              <div
-                className={`label-content ${navItem.active ? "active" : ""}`}
-                key={index}
-              >
-                {navItem.comp}
+              <div key={index}>
+                <div
+                  key={navItem.id}
+                  className={`title-label mobile-layout ${
+                    navItem.active ? "active" : ""
+                  }`}
+                  onClick={() => toggleAccordion(navItem.id)}
+                >
+                  <div>
+                    <p className="title-text">{navItem.title}</p>
+                    <p className="subtitle-text">{navItem.subtitle}</p>
+                  </div>
+                  <span className="mobile-arrow">
+                    {navItem.active ? (
+                      <MdKeyboardArrowUp />
+                    ) : (
+                      <MdKeyboardArrowDown />
+                    )}
+                  </span>
+                  <span className="desktop-separator" />
+                </div>
+                <div
+                  className={`label-content ${navItem.active ? "active" : ""}`}
+                  key={index}
+                >
+                  {navItem.comp}
+                </div>
               </div>
             ))}
           </div>

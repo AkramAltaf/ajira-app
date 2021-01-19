@@ -12,40 +12,40 @@ function Navbar() {
         </Link>
         <ul className="navbar-nav">
           <li>
-            <a href="#">For me</a>
+            <Link to="/">For me</Link>
           </li>
           <li>
-            <a href="#">Jeans</a>
+            <Link to="/">Jeans</Link>
           </li>
           <li>
-            <a href="#">Shirts</a>
+            <Link to="/">Shirts</Link>
           </li>
           <li>
-            <a href="#">T-Shirts</a>
+            <Link to="/">T-Shirts</Link>
           </li>
           <li>
-            <a href="#">Trousers</a>
+            <Link to="/">Trousers</Link>
           </li>
           <li>
-            <a href="#">Joggers</a>
+            <Link to="/">Joggers</Link>
           </li>
           <li>
-            <a href="#">Shorts</a>
+            <Link to="/">Shorts</Link>
           </li>
         </ul>
         <ul className="actions">
           <li>
-            <a href="#">
+            <Link to="/">
               <MdSearch />
-            </a>
+            </Link>
           </li>
           <li>
-            <Link to="/profile">
+            <Link to="/">
               <MdAddShoppingCart />
             </Link>
           </li>
           <li>
-            <Link to="/user">
+            <Link to="/profile">
               <MdPermIdentity />
             </Link>
           </li>

@@ -42,15 +42,15 @@ const User = () => {
             {profile ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
           </span>
         </div>
-        <div className="label-content">{profile ? <Profile /> : null}</div>
+        <div className="title-content">{profile ? <Profile /> : null}</div>
         <div className="title-label" onClick={toggleOrder}>
           <div>
             <p className="title-text">My Orders</p>
-            <p className="subtitle-text">Notifications, password</p>
+            <p className="subtitle-text">Already have 12 orders</p>
           </div>
           <span>{order ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}</span>
         </div>
-        <div className="label-content">{order ? <Order /> : null}</div>
+        <div className="title-content">{order ? <Order /> : null}</div>
         <div className="title-label" onClick={toggleAddress}>
           <div>
             <p className="title-text">Shipping addresses</p>
@@ -60,7 +60,7 @@ const User = () => {
             {address ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
           </span>
         </div>
-        <div className="label-content">{address ? <Address /> : null}</div>
+        <div className="title-content">{address ? <Address /> : null}</div>
       </div>
     </div>
   );

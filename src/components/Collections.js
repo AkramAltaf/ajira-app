@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Collections.css";
 import CollectionData from "./CollectionData";
+import { Link } from "react-router-dom";
 
 function Collections() {
   let settings = {
@@ -40,15 +41,15 @@ function Collections() {
         {CollectionData.map((val, index) => {
           return (
             <div className="collection-wrapper" key={index}>
-              <a href="#">
-                <div className="collection-image">
-                  <img src={val.imgSrc} alt="collection" />
-                </div>
-                <div className="collection-details">
-                  <a href="#">{val.title}</a>
-                  <p className="price">{val.price}</p>
-                </div>
-              </a>
+              {/* <a href="#"> */}
+              <div className="collection-image">
+                <img src={val.imgSrc} alt="collection" />
+              </div>
+              <div className="collection-details">
+                <Link to="/">{val.title}</Link>
+                <p className="price">{val.price}</p>
+              </div>
+              {/* </a> */}
             </div>
           );
         })}

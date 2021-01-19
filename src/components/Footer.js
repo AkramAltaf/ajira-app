@@ -3,6 +3,7 @@ import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { BiEnvelope } from "react-icons/bi";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -11,42 +12,42 @@ export default function Footer() {
         <div className="footer-wrap">
           <ul>
             <li>
-              <a href="#">About us</a>
+              <Link to="/">About us</Link>
             </li>
             <li>
-              <a href="#">Delivery information</a>
+              <Link to="/">Delivery information</Link>
             </li>
             <li>
-              <a href="#">Returns & Exchange</a>
+              <Link to="/">Returns & Exchange</Link>
             </li>
             <li>
-              <a href="#">Technical & privacy</a>
+              <Link to="/">Technical & privacy</Link>
             </li>
             <li>
-              <a href="#">Order status</a>
+              <Link to="/">Order status</Link>
             </li>
           </ul>
         </div>
         <div className="footer-wrap text-center">
-          <a href="#" className="ajira-brand">
+          <Link to="/" className="ajira-brand">
             Made up
-          </a>
+          </Link>
           <p>Stay in touch with us</p>
           <ul className="social">
             <li>
-              <a href="#">
+              <Link to="/">
                 <FaFacebookF />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/">
                 <FaInstagram />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/">
                 <FaYoutube />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

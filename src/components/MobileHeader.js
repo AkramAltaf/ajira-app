@@ -21,34 +21,34 @@ function MobileHeader() {
         </div>
         <ul className="sidebar">
           <li>
-            <Link to="/user" className="active">
+            <Link to="/profile" className="active">
               My profile
             </Link>
           </li>
           <li>
-            <a href="#">My wishlist</a>
+            <Link to="/">My wishlist</Link>
           </li>
           <li>
-            <a href="#">My orders</a>
+            <Link to="/">My orders</Link>
           </li>
           <li>
-            <a href="#">My addresses</a>
+            <Link to="/">My addresses</Link>
           </li>
         </ul>
         <ul className="sidebar brand">
           <li>
-            <a href="#" className="active">
+            <Link to="/" className="active">
               The brand
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">The made up story</a>
+            <Link to="/">The made up story</Link>
           </li>
           <li>
-            <a href="#">Franchise and supplieds</a>
+            <Link to="/">Franchise and supplieds</Link>
           </li>
           <li>
-            <a href="#">Store locator</a>
+            <Link to="/">Store locator</Link>
           </li>
         </ul>
       </div>
@@ -59,19 +59,19 @@ function MobileHeader() {
           </Link>
           <ul className="mobile-actions">
             <li>
-              <a href="#">
+              <Link to="#">
                 <MdSearch />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/">
                 <MdAddShoppingCart />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="#">
                 <AiOutlineMenu onClick={toggleSidebar} />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import testimonial from "../assets/testimonial-img.png";
 import "./Testimonial.css";
+import { Link } from "react-router-dom";
 
 function Testimonial() {
   let settings = {
@@ -45,13 +46,13 @@ function Testimonial() {
               </div>
               <div className="testimonial-detail">
                 <p>Vikas</p>
-                <a href="#">
+                <Link to="/">
                   <HiStar />
                   <HiStar />
                   <HiStar />
                   <HiStar />
                   <HiStar />
-                </a>
+                </Link>
               </div>
               <p>
                 <i>Love the cloth material! So breezy and </i>
@@ -67,13 +68,13 @@ function Testimonial() {
               </div>
               <div className="testimonial-detail">
                 <p>Vikas</p>
-                <a href="#">
+                <Link to="/">
                   <HiStar />
                   <HiStar />
                   <HiStar />
                   <HiStar />
                   <HiStar />
-                </a>
+                </Link>
               </div>
               <p>
                 <i>Love the cloth material! So breezy and </i>
@@ -89,13 +90,13 @@ function Testimonial() {
               </div>
               <div className="testimonial-detail">
                 <p>Vikas</p>
-                <a href="#">
+                <Link to="/">
                   <HiStar />
                   <HiStar />
                   <HiStar />
                   <HiStar />
                   <HiStar />
-                </a>
+                </Link>
               </div>
               <p>
                 <i>Love the cloth material! So breezy and </i>
